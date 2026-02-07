@@ -42,17 +42,29 @@ export const ProductGridSection: React.FC<Props> = ({
           )}
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-flow-row auto-rows-max grid-cols-[repeat(auto-fit,216px)] justify-between gap-0.5">
+        {/* UPDATED GRID:
+           1. grid-cols-2: Creates the 2-column layout for mobile.
+           2. gap-2: Adds spacing for mobile.
+           3. md:grid-cols-...: Restores your original desktop layout on wider screens.
+        */}
+        <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-2 md:grid-cols-[repeat(auto-fit,216px)] md:justify-between md:gap-0.5">
           {items.map((item) => (
-            <div key={item.id} className="h-auto w-[216px]">
+            // UPDATED ITEM WRAPPER: Removed fixed w-[216px] so it fills the grid cell
+            <div key={item.id} className="h-auto w-full">
               <a
                 href={item.href}
                 className="group block overflow-hidden rounded-md border border-gray-200 bg-white"
               >
-                <div className="relative h-[216px] w-[216px] overflow-hidden">
+                {/* UPDATED IMAGE CONTAINER: 
+                   Replaced fixed h-[216px] w-[216px] with 'aspect-square w-full'.
+                   This keeps images square on both mobile (fluid width) and desktop (fixed width).
+                */}
+                <div className="relative aspect-square w-full overflow-hidden">
                   <picture>
-                    <source media="(min-width: 768px)" srcSet={item.imgDesktop} />
+                    <source
+                      media="(min-width: 768px)"
+                      srcSet={item.imgDesktop}
+                    />
                     <img
                       loading="lazy"
                       src={item.img}
