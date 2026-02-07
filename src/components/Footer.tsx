@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <img
               src="https://www.woodensure.com/assets/images/1755344183Copy_of_wood__1_-removebg-preview.png"
-              className="mb-4 w-[230px]"
+              className="mb-4 w-[230px] bg-white p-1 rounded-lg"
               draggable={false}
             />
 

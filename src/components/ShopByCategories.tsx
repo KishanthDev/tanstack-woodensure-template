@@ -31,7 +31,7 @@ export const ShopByCategories: React.FC = () => {
               key={i}
               className="flex flex-col items-center"
             >
-              <Link to="/coffee-and-center-tables" className="w-full">
+              <Link to="/" className="w-full">
                 <div className="overflow-hidden rounded-lg">
                   <img
                     src={cat.img}

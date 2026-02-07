@@ -2,7 +2,7 @@ import React from "react";
 
 export const IconStrip: React.FC = () => {
   return (
-    <div className="my-3">
+    <div className="my-3 mt-6">
       <div className="mx-auto max-w-6xl px-4">
         <picture>
           <source

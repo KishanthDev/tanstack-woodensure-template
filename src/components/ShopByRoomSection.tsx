@@ -20,7 +20,7 @@ export const ShopByRoomSection: React.FC = () => {
 
           {/* LEFT BIG */}
           <Link
-            to="/coffee-and-center-tables"
+            to="/"
             className="relative md:col-span-2 md:row-span-2"
           >
             <img
@@ -43,7 +43,7 @@ export const ShopByRoomSection: React.FC = () => {
           ].map((item, i) => (
             <Link
               key={i}
-              to="/coffee-and-center-tables"
+              to="/"
               className="relative"
             >
               <img

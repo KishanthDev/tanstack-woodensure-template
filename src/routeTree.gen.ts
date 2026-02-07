@@ -9,16 +9,10 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as CoffeeAndCenterTablesRouteImport } from './routes/coffee-and-center-tables'
 import { Route as CartsRouteImport } from './routes/carts'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as UserLoginRouteImport } from './routes/user/login'
 
-const CoffeeAndCenterTablesRoute = CoffeeAndCenterTablesRouteImport.update({
-  id: '/coffee-and-center-tables',
-  path: '/coffee-and-center-tables',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CartsRoute = CartsRouteImport.update({
   id: '/carts',
   path: '/carts',
@@ -38,46 +32,35 @@ const UserLoginRoute = UserLoginRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/carts': typeof CartsRoute
-  '/coffee-and-center-tables': typeof CoffeeAndCenterTablesRoute
   '/user/login': typeof UserLoginRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/carts': typeof CartsRoute
-  '/coffee-and-center-tables': typeof CoffeeAndCenterTablesRoute
   '/user/login': typeof UserLoginRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/carts': typeof CartsRoute
-  '/coffee-and-center-tables': typeof CoffeeAndCenterTablesRoute
   '/user/login': typeof UserLoginRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/carts' | '/coffee-and-center-tables' | '/user/login'
+  fullPaths: '/' | '/carts' | '/user/login'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/carts' | '/coffee-and-center-tables' | '/user/login'
-  id: '__root__' | '/' | '/carts' | '/coffee-and-center-tables' | '/user/login'
+  to: '/' | '/carts' | '/user/login'
+  id: '__root__' | '/' | '/carts' | '/user/login'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CartsRoute: typeof CartsRoute
-  CoffeeAndCenterTablesRoute: typeof CoffeeAndCenterTablesRoute
   UserLoginRoute: typeof UserLoginRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/coffee-and-center-tables': {
-      id: '/coffee-and-center-tables'
-      path: '/coffee-and-center-tables'
-      fullPath: '/coffee-and-center-tables'
-      preLoaderRoute: typeof CoffeeAndCenterTablesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/carts': {
       id: '/carts'
       path: '/carts'
@@ -105,7 +88,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CartsRoute: CartsRoute,
-  CoffeeAndCenterTablesRoute: CoffeeAndCenterTablesRoute,
   UserLoginRoute: UserLoginRoute,
 }
 export const routeTree = rootRouteImport

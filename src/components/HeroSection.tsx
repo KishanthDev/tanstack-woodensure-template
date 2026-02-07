@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
 <div className="flex h-[540px] flex-col gap-4">
 
   {/* TOP IMAGE */}
-  <Link to="/coffee-and-center-tables" className="h-[260px]">
+  <Link to="/" className="h-[260px]">
     <img
       src="https://www.woodensure.com/assets/front/images/home_page_strip/home/rocking_recliner_chair_dp.jpg"
       className="h-full w-full rounded-lg object-cover"
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
 
   {/* BOTTOM TWO SIDE BY SIDE */}
   <div className="grid flex-1 grid-cols-2 gap-4">
-    <Link to="/coffee-and-center-tables">
+    <Link to="/">
       <img
         src="https://www.woodensure.com/assets/front/images/home_page_strip/home/dining_table_set_29k.avif"
         className="h-full w-full rounded-lg object-cover"
@@ -59,7 +59,7 @@ export const HeroSection: React.FC = () => {
       />
     </Link>
 
-    <Link to="/coffee-and-center-tables">
+    <Link to="/">
       <img
         src="https://www.woodensure.com/assets/front/images/home_page_strip/home/home_page_seating.avif"
         className="h-full w-full rounded-lg object-cover"

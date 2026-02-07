@@ -23,7 +23,7 @@ export const SpecialCollections: React.FC = () => {
                     {collections.map((img, i) => (
                         <Link
                             key={i}
-                            to="/coffee-and-center-tables"
+                            to="/"
                             className="min-w-[210px] overflow-hidden rounded-lg"
                         >
                             <img

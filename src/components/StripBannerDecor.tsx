@@ -5,7 +5,7 @@ export const StripBannerDecor: React.FC = () => {
   return (
     <div className="py-3">
       <div className="mx-auto max-w-6xl px-4">
-        <Link to="/coffee-and-center-tables" className="block">
+        <Link to="/" className="block">
           <picture className="block w-full">
             <source
               media="(max-width:768px)"

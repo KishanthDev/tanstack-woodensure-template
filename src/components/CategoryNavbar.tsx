@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
 
-const url = "/coffee-and-center-tables";
+const url = "/";
 
 export const CategoryNavbar: React.FC = () => {
     return (

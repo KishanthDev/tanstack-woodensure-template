@@ -45,7 +45,7 @@ export const CustomizationProductsSection: React.FC = () => {
                             key={i}
                             className="min-w-[200px] rounded-xl border bg-white p-3 shadow-sm"
                         >
-                            <Link to="/coffee-and-center-tables">
+                            <Link to="/">
                                 <img
                                     src={item.img}
                                     alt={item.name}

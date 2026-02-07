@@ -66,7 +66,7 @@ const StarRating = ({ rating }: { rating: number }) => (
     </div>
 );
 
-const ReviewsSection: React.FC = () => {
+export const ReviewsSection: React.FC = () => {
     const sliderRef = useRef<HTMLDivElement>(null);
     const [isDown, setIsDown] = useState(false);
     const [startX, setStartX] = useState(0);
@@ -119,16 +119,16 @@ const ReviewsSection: React.FC = () => {
                     // Explained above: 
                     // When isDown (dragging) -> snap-none (allows smooth JS movement)
                     // When !isDown (idle) -> snap-x (snaps to card when you let go)
-                    
+
                     onMouseDown={handleMouseDown}
                     onMouseLeave={handleMouseLeave}
                     onMouseUp={handleMouseUp}
                     onMouseMove={handleMouseMove}
-                    style={{ 
-                        scrollbarWidth: 'none', 
+                    style={{
+                        scrollbarWidth: 'none',
                         msOverflowStyle: 'none',
                         // Ensure smooth behavior is OFF during drag to prevent lag
-                        scrollBehavior: isDown ? 'auto' : 'smooth' 
+                        scrollBehavior: isDown ? 'auto' : 'smooth'
                     }}
                 >
                     {reviewsData.map((review) => (
@@ -183,5 +183,3 @@ const ReviewsSection: React.FC = () => {
         </section>
     );
 };
-
-export default ReviewsSection;
