@@ -5,5 +5,5 @@ export const Route = createFileRoute('/coffee-and-center-tables')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/coffee-and-center-tables"!</div>
+  return <div></div>
 }

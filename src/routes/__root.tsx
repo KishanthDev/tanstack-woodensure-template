@@ -17,6 +17,8 @@ import { ShopByCategories } from '@/components/ShopByCategories'
 import { SpecialCollections } from '@/components/SpecialCollections'
 import { CustomizationProductsSection } from '@/components/CustomizationProductsSection'
 import { Footer } from '@/components/Footer'
+import { StripBannerDecor } from '@/components/StripBannerDecor'
+import ShopByBudgetSection, {  } from '@/components/ShopByBudgetSection'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -49,17 +51,19 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body className="bg-gray-50 text-gray-900">
         <Header />
         <CategoryNavbar />
-        <HeroSection/>
-        <IconStrip/>
-        <ShopByCategories/>
-        <SpecialCollections/>
-        <CustomizationProductsSection/>
+        <HeroSection />
+        <IconStrip />
+        <ShopByCategories />
+        <SpecialCollections />
+        <CustomizationProductsSection />
+        <StripBannerDecor />
+        <ShopByBudgetSection />
 
         <main className="mx-auto max-w-6xl px-4 py-6">
           {children}
         </main>
 
-        <Footer/>
+        <Footer />
         <TanStackDevtools
           config={{ position: 'bottom-right' }}
           plugins={[
