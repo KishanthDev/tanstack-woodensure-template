@@ -42,10 +42,15 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
 
       <body className="bg-gray-50 text-gray-900">
-        <Header />
-        <CategoryNavbar />
 
-        <main className="mx-auto max-w-6xl px-4 py-6">
+        {/* FIXED TOP AREA */}
+        <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+          <Header />
+          <CategoryNavbar />
+        </div>
+
+        {/* PUSH CONTENT BELOW FIXED HEADER */}
+        <main className="mx-auto mt-5 max-w-6xl px-4 pt-[140px] pb-6">
           {children}
         </main>
 

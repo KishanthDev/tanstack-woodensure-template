@@ -8,7 +8,6 @@ import {
   User, 
   ChevronRight, 
   ChevronLeft,
-  ArrowRight
 } from 'lucide-react';
 
 // --- Setup Link for TanStack Router ---
@@ -41,7 +40,7 @@ export const Header: React.FC = () => {
     const closeSubMenu = () => setActiveSubMenu(null);
 
     return (
-        <header className="w-full bg-white shadow-sm relative z-50">
+        <header className="w-full bg-white relative z-50">
             
             {/* --- 1. MARQUEE / SCROLLING HEADER --- */}
             {/* Tailwind doesn't have a built-in infinite marquee, so we use a small custom style or config */}
@@ -55,7 +54,7 @@ export const Header: React.FC = () => {
             </div>
 
             {/* --- 2. MAIN NAVBAR --- */}
-            <nav className="border-b border-gray-100">
+            <nav>
                 <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
 
                     {/* Left: Mobile Toggle & Mobile Search Icon */}
