@@ -45,7 +45,10 @@ export const ProductGridSection: React.FC<Props> = ({
         {/* Grid */}
         <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-2 md:grid-cols-[repeat(auto-fit,216px)] md:justify-between md:gap-0.5">
           {items.map((item) => (
-            <div key={item.id} className="h-auto w-full">
+            <div
+              key={item.id}
+              className="h-auto w-full last:odd:col-span-2 md:last:odd:col-span-1"
+            >
               <a
                 href={item.href}
                 className="group block overflow-hidden rounded-md border border-gray-200 bg-white"
