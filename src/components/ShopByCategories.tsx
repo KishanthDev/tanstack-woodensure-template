@@ -25,7 +25,7 @@ export const ShopByCategories: React.FC = () => {
       </p>
 
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="grid grid-cols-4 gap-2 sm:gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {categories.map((cat, i) => (
             <div
               key={i}
@@ -42,7 +42,8 @@ export const ShopByCategories: React.FC = () => {
                 </div>
               </Link>
 
-              <span className="mt-2 text-center text-sm font-medium">
+              {/* Updated Text size for Mobile (text-[10px]) vs Desktop (sm:text-sm) */}
+              <span className="mt-2 text-center text-[10px] font-medium leading-tight sm:text-sm">
                 {cat.name}
               </span>
             </div>
