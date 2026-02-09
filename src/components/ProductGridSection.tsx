@@ -42,23 +42,14 @@ export const ProductGridSection: React.FC<Props> = ({
           )}
         </div>
 
-        {/* UPDATED GRID:
-           1. grid-cols-2: Creates the 2-column layout for mobile.
-           2. gap-2: Adds spacing for mobile.
-           3. md:grid-cols-...: Restores your original desktop layout on wider screens.
-        */}
+        {/* Grid */}
         <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-2 md:grid-cols-[repeat(auto-fit,216px)] md:justify-between md:gap-0.5">
           {items.map((item) => (
-            // UPDATED ITEM WRAPPER: Removed fixed w-[216px] so it fills the grid cell
             <div key={item.id} className="h-auto w-full">
               <a
                 href={item.href}
                 className="group block overflow-hidden rounded-md border border-gray-200 bg-white"
               >
-                {/* UPDATED IMAGE CONTAINER: 
-                   Replaced fixed h-[216px] w-[216px] with 'aspect-square w-full'.
-                   This keeps images square on both mobile (fluid width) and desktop (fixed width).
-                */}
                 <div className="relative aspect-square w-full overflow-hidden">
                   <picture>
                     <source
@@ -69,11 +60,11 @@ export const ProductGridSection: React.FC<Props> = ({
                       loading="lazy"
                       src={item.img}
                       alt={item.title}
-                      className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-[1.03]"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                     />
                   </picture>
 
-                  <div className="pointer-events-none absolute inset-0 bg-white/20 opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="pointer-events-none absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
                   {item.discountText && (
                     <span className="absolute left-0 top-2 rounded-sm bg-green-700 px-2 py-1 text-[13px] font-semibold text-white shadow-sm">
@@ -81,16 +72,17 @@ export const ProductGridSection: React.FC<Props> = ({
                     </span>
                   )}
 
-                  {/* hover icons */}
-                  <ul className="pointer-events-none absolute right-1 top-1 flex flex-col gap-1 opacity-0 transition-opacity group-hover:opacity-100">
-                    <li>
-                      <button className="pointer-events-auto flex h-8 w-8 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100">
-                        <Eye size={16} />
+                  {/* HOVER ICONS CONTAINER */}
+                  <ul className="pointer-events-none absolute right-2 top-2 flex flex-col gap-2">
+                    <li className="-translate-y-8 opacity-0 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+                      <button className="pointer-events-auto flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100 hover:text-emerald-600">
+                        <Eye size={20} />
                       </button>
                     </li>
-                    <li>
-                      <button className="pointer-events-auto flex h-8 w-8 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100">
-                        <Heart size={16} />
+
+                    <li className="translate-x-8 opacity-0 transition-all duration-500 ease-out group-hover:translate-x-0 group-hover:opacity-100">
+                      <button className="pointer-events-auto flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100 hover:text-red-500">
+                        <Heart size={20} />
                       </button>
                     </li>
                   </ul>
