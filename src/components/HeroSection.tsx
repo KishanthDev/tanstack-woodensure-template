@@ -49,7 +49,7 @@ export const HeroSection: React.FC = () => {
 
             {/* TOP IMAGE */}
             {/* Mobile: Fixed height 200px. Desktop: Fixed height 260px */}
-            <Link to="/" className="block h-[200px] lg:h-[260px]">
+            <Link to="/" className="block h-[120px] lg:h-[260px]">
               <img
                 src="https://www.woodensure.com/assets/front/images/home_page_strip/home/rocking_recliner_chair_dp.jpg"
                 className="h-full w-full rounded-lg object-fill"
