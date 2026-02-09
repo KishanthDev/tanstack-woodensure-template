@@ -42,8 +42,7 @@ export const ShopByCategories: React.FC = () => {
                 </div>
               </Link>
 
-              {/* Updated Text size for Mobile (text-[10px]) vs Desktop (sm:text-sm) */}
-              <span className="mt-2 text-center text-[10px] font-medium leading-tight sm:text-sm">
+              <span className="mt-2 text-center text-[8px] font-medium leading-tight tracking-wide uppercase sm:text-xs">
                 {cat.name}
               </span>
             </div>
