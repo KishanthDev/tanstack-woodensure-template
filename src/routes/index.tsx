@@ -12,6 +12,8 @@ import { DiningTableSection } from '@/components/section/DiningTableSection'
 import { MarbleDiningTableSection } from '@/components/section/MarbleDiningTableSection'
 import { HeightAdjustableSection } from '@/components/section/HeightAdjustableSection'
 import { DeliveryBanner } from '@/components/DeliveryBanner'
+import { ExclusiveDiscounts } from '@/components/ExclusiveDiscounts'
+import { ShopByBudget } from '@/components/ShopByBudget'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -29,9 +31,11 @@ function HomePage() {
       <HomeDecorSection />
       <StripBannerDecor />
       <DiningTableSection />
+      <ExclusiveDiscounts/>
       <MarbleDiningTableSection />
       <DeliveryBanner/>
       <HeightAdjustableSection />
+      <ShopByBudget/>
       <ReviewsSection />
 
     </div>
