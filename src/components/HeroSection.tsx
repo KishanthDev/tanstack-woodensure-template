@@ -11,15 +11,11 @@ const slides = [
     href: "/",
     desktop:
       "https://www.woodensure.com/assets/images/sliders/1768814406herowebbannerdesk.jpg",
-    mobile:
-      "https://www.woodensure.com/assets/images/sliders/1768814406herobannerphone.jpg",
     alt: "Hero banner",
   },
   {
     href: "/",
     desktop:
-      "https://www.woodensure.com/assets/images/sliders/1768814522herowebbannerdesk.jpg",
-    mobile:
       "https://www.woodensure.com/assets/images/sliders/1768814522herowebbannerdesk.jpg",
     alt: "Hero banner 2",
   },
@@ -27,16 +23,12 @@ const slides = [
     href: "/",
     desktop:
       "https://www.woodensure.com/assets/images/sliders/1769498228desk.jpg",
-    mobile:
-      "https://www.woodensure.com/assets/images/sliders/1769498228desk.jpg",
     alt: "Hero banner 3",
   },
   {
     href: "/",
     desktop:
       "https://www.woodensure.com/assets/images/sliders/1770381055_photo.avif",
-    mobile:
-    "https://www.woodensure.com/assets/images/sliders/1770381055_photo.avif",
     alt: "Hero banner 4",
   },
 ];
@@ -78,7 +70,7 @@ export const HeroSection: React.FC = () => {
                       <picture>
                         <source
                           media="(max-width: 767px)"
-                          srcSet={slide.mobile}
+                          srcSet={slide.desktop}
                         />
                         <img
                           src={slide.desktop}
