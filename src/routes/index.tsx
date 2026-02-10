@@ -15,6 +15,7 @@ import { DeliveryBanner } from '@/components/DeliveryBanner'
 import { ExclusiveDiscounts } from '@/components/ExclusiveDiscounts'
 import { ShopByBudget } from '@/components/ShopByBudget'
 import { ShopByRoom } from '@/components/ShopByRoom'
+import { BlogSection } from '@/components/TrustedBrandSection'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -39,6 +40,7 @@ function HomePage() {
       <HeightAdjustableSection />
       <ShopByBudget />
       <ReviewsSection />
+      <BlogSection/>
 
     </div>
   )
