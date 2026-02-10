@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
                         <img
                           src={slide.desktop}
                           alt={slide.alt}
-                          className="w-full h-auto rounded-lg object-cover"
+                          className="w-full h-auto rounded-lg object-fill"
                           draggable={false}
                         />
                       </picture>
@@ -112,7 +112,7 @@ export const HeroSection: React.FC = () => {
               <img
                 src="https://www.woodensure.com/assets/front/images/home_page_strip/home/rocking_recliner_chair_dp.jpg"
                 alt="Rocking recliner chair"
-                className="h-full w-full rounded-lg object-cover"
+                className="h-full w-full rounded-lg object-fill"
                 draggable={false}
                 loading="lazy"
               />
@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
                 <img
                   src="https://www.woodensure.com/assets/front/images/home_page_strip/home/dining_table_set_29k.avif"
                   alt="Dining table set"
-                  className="h-full w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-fill"
                   draggable={false}
                   loading="lazy"
                 />
@@ -133,7 +133,7 @@ export const HeroSection: React.FC = () => {
                 <img
                   src="https://www.woodensure.com/assets/front/images/home_page_strip/home/home_page_seating.avif"
                   alt="Home seating"
-                  className="h-full w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-fill"
                   draggable={false}
                   loading="lazy"
                 />
