@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
 
           {/* INFORMATION (Mobile: Top Left of the 2x2 grid) */}
           <div>
-            <h4 className="mb-4 font-bold text-lg text-white">Information</h4>
+            <h4 className="mb-4 font-bold text-lg uppercase underline underline-offset-4 text-white">Information</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="hover:text-white cursor-pointer">About Us</li>
               <li className="hover:text-white cursor-pointer">Our Story</li>
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
 
           {/* USEFUL LINKS (Mobile: Top Right of the 2x2 grid) */}
           <div>
-            <h4 className="mb-4 font-bold text-lg text-white">Useful Links</h4>
+            <h4 className="mb-4 font-bold text-lg uppercase underline underline-offset-4 text-white">Useful Links</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="hover:text-white cursor-pointer">Blog</li>
               <li className="hover:text-white cursor-pointer">Sitemap</li>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
 
           {/* CATEGORIES (Mobile: Bottom Left of the 2x2 grid) */}
           <div>
-            <h4 className="mb-4 font-bold text-lg text-white">Categories</h4>
+            <h4 className="mb-4 font-bold text-lg uppercase underline underline-offset-4 text-white">Categories</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="hover:text-white cursor-pointer">Coffee & Center Tables</li>
               <li className="hover:text-white cursor-pointer">Side Table</li>
@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
 
           {/* EXTRA CATEGORIES (Mobile: Bottom Right of the 2x2 grid) */}
           <div>
-            <h4 className="mb-4 font-bold text-lg text-white">More</h4>
+            <h4 className="mb-4 font-bold text-lg uppercase underline underline-offset-4 text-white">More</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="hover:text-white cursor-pointer">Door</li>
               <li className="hover:text-white cursor-pointer">Console Table</li>
