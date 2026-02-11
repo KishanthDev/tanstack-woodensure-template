@@ -11,15 +11,15 @@ export const CategoryNavbar: React.FC = () => {
                 2. lg:overflow-visible: Disables scrolling on desktop so dropdowns can pop out (overflow).
                 3. scrollbar-hide: Hides the ugly scrollbar (style added below).
             */}
-            <div className="mx-auto flex max-w-6xl items-center gap-6 px-4 py-3 text-sm overflow-x-auto lg:overflow-visible whitespace-nowrap scrollbar-hide">
+            <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-1 text-sm overflow-x-auto lg:overflow-visible whitespace-nowrap scrollbar-hide">
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Coffee & Center Tables
                 </Link>
 
                 {/* Side Table */}
                 <div className="group relative">
-                    <Link to={url} className="font-medium hover:text-emerald-600 inline-block h-full">
+                    <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600 inline-block h-full">
                         Side Table
                     </Link>
 
@@ -39,7 +39,7 @@ export const CategoryNavbar: React.FC = () => {
 
                 {/* Dining Table */}
                 <div className="group relative">
-                    <Link to={url} className="font-medium hover:text-emerald-600 inline-block h-full">
+                    <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600 inline-block h-full">
                         Dining Table
                     </Link>
 
@@ -53,35 +53,43 @@ export const CategoryNavbar: React.FC = () => {
                     </div>
                 </div>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Office Table
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Nesting Table
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
+                    Console Table
+                </Link>
+
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Home Decor
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
+                    Door
+                </Link>
+
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Seating
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Kitchen & Dining
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Accessories
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Metal Legs
                 </Link>
 
-                <Link to={url} className="font-medium hover:text-emerald-600">
+                <Link to={url} className="font-bold text-[11px] uppercase hover:text-emerald-600">
                     Customization
                 </Link>
 
